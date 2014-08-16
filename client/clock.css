@@ -1,0 +1,19 @@
+body{
+  margin: 0px;
+  background-color: #f4f4f4;
+}
+b{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+}	
+.hidden{
+  visibility:hidden;
+  width:0px;
+  height:0px;
+  margin:0px;
+  padding:0px;
+  border-style:none;
+  border-width:0px;
+  max-width:0px;
+  max-height:0px;
+}
