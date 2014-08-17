@@ -1,6 +1,7 @@
 Meteor.startup(function (){
 
 var Jazz = document.getElementById("Jazz");
+if (!Jazz.isJazz) Jazz.style.visibility = 'visible';
 var once = true;
 Meteor.setInterval(function(){
 
@@ -28,9 +29,9 @@ Meteor.setInterval(function(){
   	 once = false;
   } 
     	
-  	 exe(message, 0xC0, 45, 0);
-    exe(message, 0xe0, sl, sm);
-    exe(message, 0x90, sh, 127);
+  exe(message, 0xC0, 45, 0);
+  exe(message, 0xe0, sl, sm);
+  exe(message, 0x90, sh, 127);
    
   if (Sec == 0){
  	 //console.log(Min);
