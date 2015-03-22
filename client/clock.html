@@ -10,24 +10,26 @@
 <a href="http://jazz-soft.net">Jazz-Plugin</a><br>Restart the browser 
 <img src="/chrome.ico"> after installing</p>
 </object>
-
-  <svg xmlns="http://www.w3.org/2000/svg"
-       width="400" height="400"
-       viewBox="-110 -110 220 220">
+<center>
+  <!--<svg xmlns="http://www.w3.org/2000/svg"
+       width="600" height="600"
+       viewBox="-110 -110 220 220">-->
+       
+  <svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="-160 -160 320 320">      
 
     <!-- bounding circle -->
     <circle style="stroke: black; fill: #eee;"
-            cx="0" cy="0" r="100"/>
+            cx="0" cy="0" r="150"/>
 
     <!-- hour, minute and second hands -->
     {{#with handData}}
-      <line {{radial hourDegrees 0 .55}}
+      <line {{radial hourDegrees 0 .66}}
             style="stroke-width: 6px;
                    stroke: green;" />
-      <line {{radial minuteDegrees 0 .85}}
+      <line {{radial minuteDegrees 0 .76}}
             style="stroke-width: 4px;
                    stroke: blue;" />
-      <line {{radial secondDegrees 0 .95}}
+      <line {{radial secondDegrees 0 .89}}
             style="stroke-width: 2px;
                    stroke: red;" />
     {{/with}}
@@ -39,12 +41,12 @@
                    stroke: black;" />
     {{/each}}
   </svg>
- 
+  <br>
  {{#with handData}} 
    <b>{{Hours}} : {{Minutes}} : {{Seconds}}</b><br>
  {{/with}}
-
+</center>
 </body>
 
-<!-- Adapted from David Basoko's SVG clock demo -->
+<!-- http://60-edo.clock.meteor.com/ Adapted from David Basoko's SVG clock demo -->
 
